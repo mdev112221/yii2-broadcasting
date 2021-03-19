@@ -6,12 +6,12 @@ use mkiselev\broadcasting\Module;
 use ReflectionClass;
 use ReflectionProperty;
 use Yii;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * @property bool toOthers
  */
-abstract class BroadcastEvent extends Object
+abstract class BroadcastEvent extends BaseObject
 {
     /*
      * Is it necessary to exclude the current user from the broadcast's recipients
